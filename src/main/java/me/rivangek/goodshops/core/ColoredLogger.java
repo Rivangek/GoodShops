@@ -1,7 +1,10 @@
 package me.rivangek.goodshops.core;
 
-public class ColoredLogger {
-    public static void outputMessage(String messageToOutput) {
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 
+public class ColoredLogger {
+    public void outputMessage(String messageToOutput) {
+        Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', messageToOutput));
     }
 }

@@ -1,4 +1,20 @@
 # Method to save data of your player shops.
-# You can use MySQL, SQLite & MongoDB.
+# You can use MySQL, SQLite & MongoDB. (If you want it to be on the local server, use SQLite)
 data_saving: MySQL
+
+# Providers for plugin.
 economy_provider: Vault # You can choose between Vault & GoodCurrencies
+custom_item_provider: GoodItems # You can only choose GoodItems. If you made/know another one, please DM me in my Discord. (Kahel#1897)
+
+mongo_database: # MongoDB database settings (Config this if you using MongoDB)
+  uri: some_stuff
+  database_name: "Minecraft"
+  collection_name: "goodshops"
+
+sql_database: # MySQL database settings (Config this if you using MySQL)
+  host: localhost # The host for your database.
+  port: 3306 # The port, don't paste it with the host.
+  user: user
+  password: password
+  database_name: Minecraft
+  table_prefix: "goodshops_"

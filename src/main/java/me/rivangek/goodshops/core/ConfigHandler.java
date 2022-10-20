@@ -3,7 +3,6 @@ package me.rivangek.goodshops.core;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.IOException;
@@ -95,5 +94,9 @@ public class ConfigHandler {
 
     public String getMessageNoFormat(String messageLocation) {
         return this.getConfigurationFromFile("messages.yml").getString(messageLocation);
+    }
+
+    public Object getSectionFromConfig(String configLocation) {
+        return this.getConfigurationFromFile("config.yml").getString(configLocation);
     }
 }

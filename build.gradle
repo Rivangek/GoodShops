@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = 'me.rivangek'
@@ -19,6 +20,7 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.18-R0.1-SNAPSHOT'
+    implementation 'com.zaxxer:HikariCP:4.0.3'
 }
 
 def targetJavaVersion = 17
