@@ -1,0 +1,4 @@
+# Method to save data of your player shops.
+# You can use MySQL, SQLite & MongoDB.
+data_saving: MySQL
+economy_provider: Vault # You can choose between Vault & GoodCurrencies

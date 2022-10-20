@@ -1,0 +1,11 @@
+name: GoodShops
+version: '${version}'
+main: me.rivangek.goodshops.GoodShops
+api-version: 1.18
+depend:
+  - ProtocolLib
+softdepend:
+  - Vault
+  - GoodCurrencies
+authors: [ Rivangek ]
+description: Allows players & administrators to create shops.

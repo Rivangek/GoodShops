@@ -1,0 +1,14 @@
+# This is the Main inventory, basically the inventory that opens when typing "/shop".
+# Must be named "Main.yml" to be the main category, otherwise, will be considered as a sub-category.
+
+title: "&8&lShop" # You can format text here.
+inventory_rows: 5
+inventory_items: # Established items in inventory. The format must be "slot: item_id"
+  37:
+    display_name: "&b&lOres"
+    material: diamond # You can search for minecraft item IDS and then paste it here without the "minecraft:"
+    actions:
+      - "[OPEN] OresCategory"
+      - "[SOUND] ENTITY_EXPERIENCE_ORB_PICKUP"
+    lore:
+      - "&7Ores to create armors, tools, and blocks."
